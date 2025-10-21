@@ -1,0 +1,62 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║                  AVENTUS WEBSITE - IONOS UPLOAD STEPS                 ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+📍 YOUR FILES ARE HERE:
+   /tmp/cc-agent/58895777/project/
+
+🎯 WHAT TO DO:
+
+STEP 1: Open This File in Your Browser
+---------------------------------------
+Double-click this file to open it:
+   IONOS-UPLOAD-GUIDE.html
+
+It will open in your web browser and show you everything you need!
+
+
+STEP 2: Copy the Website Code
+------------------------------
+The guide file has big "Copy to Clipboard" buttons.
+Click each button to copy the code.
+
+
+STEP 3: Save the Files
+-----------------------
+- Open Notepad (Windows) or TextEdit (Mac)
+- Paste the copied code
+- Save as: index.html
+- Repeat for the 4 legal files
+
+
+STEP 4: Upload to IONOS
+------------------------
+1. Log into ionos.com
+2. Go to File Manager
+3. Upload index.html to the ROOT folder
+4. Create a folder called "legal"
+5. Upload the 4 legal files into the "legal" folder
+
+
+STEP 5: Done!
+-------------
+Visit your domain and your website is LIVE! 🎉
+
+
+═══════════════════════════════════════════════════════════════════════
+
+FILES YOU NEED TO UPLOAD:
+
+1. index.html          (goes in ROOT folder)
+2. terms-of-use.html   (goes in /legal/ folder)
+3. privacy-policy.html (goes in /legal/ folder)
+4. disclaimer.html     (goes in /legal/ folder)
+5. company-info.html   (goes in /legal/ folder)
+
+═══════════════════════════════════════════════════════════════════════
+
+NEED HELP?
+Email: info@aventusdigital.co.uk
+Phone: +44 121 384 1333
+
+═══════════════════════════════════════════════════════════════════════

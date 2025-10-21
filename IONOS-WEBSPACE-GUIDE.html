@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IONOS Webspace - Beginner's Upload Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #003d7a;
+            border-bottom: 3px solid #003d7a;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 30px;
+        }
+        .step {
+            background: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .step-number {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .important {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .file-list {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .file-list div {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .screenshot-note {
+            background: #e7f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Upload Your Aventus Consulting Website to IONOS</h1>
+        <p><strong>Complete Beginner's Guide - No Technical Knowledge Required!</strong></p>
+
+        <div class="important">
+            <strong>⏱️ Total Time:</strong> About 10-15 minutes<br>
+            <strong>📁 What You'll Upload:</strong> 6 files total (1 main page + 2 asset files + 3 legal pages)
+        </div>
+
+        <h2>PART 1: Connect Your Domain to Webspace</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>On the IONOS page you're currently viewing:</strong>
+            <ul>
+                <li>Find the option that says <strong>"Connect to webspace"</strong></li>
+                <li>It's the 3rd option from the top</li>
+                <li>The description says: "Connect your domain to a directory in your webspace"</li>
+                <li><strong>Click on it</strong></li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Follow the prompts:</strong>
+            <ul>
+                <li>IONOS will ask you to confirm - click <strong>"Continue"</strong> or <strong>"Next"</strong></li>
+                <li>It may ask which webspace folder to use - choose the <strong>default</strong> or <strong>root folder</strong></li>
+                <li>Click <strong>"Save"</strong> or <strong>"Connect"</strong></li>
+            </ul>
+            <div class="screenshot-note">
+                💡 This process sets up a space where your website files will live
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>Wait for confirmation:</strong>
+            <ul>
+                <li>You should see a success message</li>
+                <li>This might take 30 seconds to 2 minutes</li>
+            </ul>
+        </div>
+
+        <h2>PART 2: Access File Manager</h2>
+
+        <div class="step">
+            <span class="step-number">4</span>
+            <strong>Navigate to File Manager:</strong>
+            <ul>
+                <li>Look for a menu item called <strong>"File Manager"</strong> or <strong>"WebSpace"</strong></li>
+                <li>This is usually under "Websites & Domains" or in the main menu</li>
+                <li>Click on it to open the file manager</li>
+            </ul>
+            <div class="screenshot-note">
+                💡 File Manager is like Windows Explorer or Mac Finder - it shows your website files
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="step-number">5</span>
+            <strong>You should see a folder structure:</strong>
+            <ul>
+                <li>You might see folders like "public_html" or "htdocs" or just an empty space</li>
+                <li>If you see "public_html" - <strong>open it</strong> (double-click)</li>
+                <li>If it's empty - that's perfect! You're in the right place</li>
+            </ul>
+        </div>
+
+        <h2>PART 3: Upload Your Website Files</h2>
+
+        <div class="important">
+            <strong>📂 Files to Upload:</strong><br>
+            All these files are in the <code>dist</code> folder in your project
+        </div>
+
+        <div class="file-list">
+            <strong>Your file structure should look like this:</strong>
+            <div>📄 index.html</div>
+            <div>📄 _redirects</div>
+            <div>📁 assets/</div>
+            <div style="padding-left: 40px">📄 index-CAl8CKXT.css</div>
+            <div style="padding-left: 40px">📄 index-CGa30ktP.js</div>
+            <div>📁 legal/</div>
+            <div style="padding-left: 40px">📄 company-info.html</div>
+            <div style="padding-left: 40px">📄 disclaimer.html</div>
+            <div style="padding-left: 40px">📄 privacy-policy.html</div>
+            <div style="padding-left: 40px">📄 terms-of-use.html</div>
+        </div>
+
+        <div class="step">
+            <span class="step-number">6</span>
+            <strong>Upload index.html (your main page):</strong>
+            <ul>
+                <li>Look for an <strong>"Upload"</strong> button (usually at the top)</li>
+                <li>Click it</li>
+                <li>Browse to your project folder → <code>dist</code> folder</li>
+                <li>Select <strong>index.html</strong></li>
+                <li>Click <strong>"Open"</strong> or <strong>"Upload"</strong></li>
+                <li>Wait for the upload to complete (should be instant)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-number">7</span>
+            <strong>Upload _redirects file:</strong>
+            <ul>
+                <li>Click <strong>"Upload"</strong> again</li>
+                <li>From the <code>dist</code> folder, select <strong>_redirects</strong></li>
+                <li>Upload it</li>
+            </ul>
+            <div class="screenshot-note">
+                💡 This file helps your website handle page navigation correctly
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="step-number">8</span>
+            <strong>Create the "assets" folder and upload its contents:</strong>
+            <ul>
+                <li>Look for a <strong>"New Folder"</strong> or <strong>"Create Folder"</strong> button</li>
+                <li>Click it</li>
+                <li>Name the folder: <strong>assets</strong> (all lowercase)</li>
+                <li>Click <strong>"Create"</strong> or <strong>"OK"</strong></li>
+                <li><strong>Open</strong> this new assets folder (double-click it)</li>
+                <li>Now click <strong>"Upload"</strong></li>
+                <li>Go to your <code>dist/assets</code> folder</li>
+                <li>Select BOTH files:
+                    <ul>
+                        <li>index-CAl8CKXT.css</li>
+                        <li>index-CGa30ktP.js</li>
+                    </ul>
+                </li>
+                <li>Upload them (you can usually select multiple files at once)</li>
+                <li>After uploading, click <strong>"Back"</strong> or navigate back to the main folder</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-number">9</span>
+            <strong>Create the "legal" folder and upload its contents:</strong>
+            <ul>
+                <li>Click <strong>"New Folder"</strong> again</li>
+                <li>Name it: <strong>legal</strong> (all lowercase)</li>
+                <li>Create it</li>
+                <li><strong>Open</strong> this new legal folder</li>
+                <li>Click <strong>"Upload"</strong></li>
+                <li>Go to your <code>dist/legal</code> folder</li>
+                <li>Select ALL 4 files:
+                    <ul>
+                        <li>company-info.html</li>
+                        <li>disclaimer.html</li>
+                        <li>privacy-policy.html</li>
+                        <li>terms-of-use.html</li>
+                    </ul>
+                </li>
+                <li>Upload them all at once</li>
+            </ul>
+        </div>
+
+        <h2>PART 4: Check Your Website</h2>
+
+        <div class="step">
+            <span class="step-number">10</span>
+            <strong>Verify everything is uploaded:</strong>
+            <ul>
+                <li>Navigate back to your main folder (root)</li>
+                <li>You should see:
+                    <ul>
+                        <li>✅ index.html</li>
+                        <li>✅ _redirects</li>
+                        <li>✅ assets folder (with 2 files inside)</li>
+                        <li>✅ legal folder (with 4 files inside)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-number">11</span>
+            <strong>Visit your website:</strong>
+            <ul>
+                <li>Open a new browser tab</li>
+                <li>Type: <strong>https://aventusconsulting.co.uk</strong></li>
+                <li>Press Enter</li>
+            </ul>
+            <div class="screenshot-note">
+                ⏱️ Note: It may take 5-10 minutes for your website to appear. If you see an error, wait a few minutes and try again.
+            </div>
+        </div>
+
+        <div class="success">
+            <h3>🎉 Congratulations!</h3>
+            <p>Your Aventus Consulting website is now LIVE on the internet!</p>
+            <p><strong>Your website includes:</strong></p>
+            <ul>
+                <li>✅ Professional homepage with your logo and services</li>
+                <li>✅ Contact information and social media links</li>
+                <li>✅ Legal pages (Privacy Policy, Terms of Use, Disclaimer, Company Info)</li>
+                <li>✅ Fully responsive design (works on phones, tablets, computers)</li>
+            </ul>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="step">
+            <strong>Problem: Website doesn't load</strong>
+            <ul>
+                <li><strong>Solution:</strong> Wait 10-15 minutes. DNS changes can take time</li>
+                <li>Try clearing your browser cache (Ctrl+Shift+Delete)</li>
+                <li>Try viewing in an incognito/private window</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <strong>Problem: Page looks broken or unstyled</strong>
+            <ul>
+                <li><strong>Solution:</strong> Check that the assets folder was uploaded correctly</li>
+                <li>Make sure both CSS and JS files are in the assets folder</li>
+                <li>File names are case-sensitive and must match exactly</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <strong>Problem: Legal pages show 404 error</strong>
+            <ul>
+                <li><strong>Solution:</strong> Check that the legal folder was created with the correct name (all lowercase)</li>
+                <li>Verify all 4 HTML files are inside the legal folder</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <strong>Problem: Can't find File Manager</strong>
+            <ul>
+                <li><strong>Solution:</strong> Look under "Websites & Domains" in your IONOS dashboard</li>
+                <li>Or search for "WebSpace" or "FTP" in the IONOS help search</li>
+                <li>You can also use FTP software like FileZilla if you prefer</li>
+            </ul>
+        </div>
+
+        <h2>Need Help?</h2>
+
+        <div class="important">
+            <strong>IONOS Support:</strong><br>
+            If you get stuck, IONOS has 24/7 customer support:<br>
+            • Phone support available<br>
+            • Live chat in your IONOS dashboard<br>
+            • Help articles at help.ionos.com<br><br>
+            <strong>What to tell them:</strong> "I need help uploading my website files to webspace for aventusconsulting.co.uk"
+        </div>
+
+        <div class="success">
+            <h3>📧 You're Done!</h3>
+            <p>Once uploaded, your website will be accessible to anyone in the world at:<br>
+            <strong style="font-size: 1.2em;">https://aventusconsulting.co.uk</strong></p>
+        </div>
+    </div>
+</body>
+</html>

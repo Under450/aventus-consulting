@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IONOS Upload Instructions - Aventus Website</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #1e293b;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        .step {
+            background: #f8fafc;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .step h2 {
+            color: #f59e0b;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .step-number {
+            background: #f59e0b;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .file-box {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            position: relative;
+        }
+        .file-name {
+            color: #f59e0b;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .copy-btn {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        .copy-btn:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+        }
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+        .success {
+            background: #10b981 !important;
+        }
+        .important {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .important strong {
+            color: #d97706;
+        }
+        code {
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        .download-all {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 20px 0;
+            display: block;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        .download-all:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Aventus Website - IONOS Upload Guide</h1>
+        <p class="subtitle">Follow these simple steps to publish your website</p>
+
+        <div class="step">
+            <h2><span class="step-number">1</span> Log into IONOS</h2>
+            <p>Go to <strong>ionos.com</strong> and log in to your account</p>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">2</span> Access File Manager</h2>
+            <p>Find <strong>"Websites & Domains"</strong> or <strong>"File Manager"</strong> in your IONOS dashboard</p>
+            <p style="margin-top: 10px;">Look for the option to manage your website files</p>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">3</span> Copy Your Website Files</h2>
+            <p>Below are all 5 files you need. Click "Copy to Clipboard" for each file, then paste into a text editor and save with the exact filename shown.</p>
+
+            <div class="important">
+                <strong>IMPORTANT:</strong> You need to create a folder called <code>legal</code> in your IONOS file manager, then upload the 4 legal files into that folder.
+            </div>
+
+            <!-- FILE 1: index.html -->
+            <div class="file-box">
+                <div class="file-name">📄 index.html (Upload to ROOT folder)</div>
+                <pre id="file1"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventus Digital Media - Elevate Your Digital Presence</title>
+    <meta name="description" content="Aventus Digital Media partners with creators and digital personalities to amplify their online impact through strategic media marketing and brand development.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="module">
+        import { createElement as h, useState } from 'https://esm.sh/react@18.3.1';
+        import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
+
+        const Menu = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('line',{x1:"4",x2:"20",y1:"12",y2:"12"}), h('line',{x1:"4",x2:"20",y1:"6",y2:"6"}), h('line',{x1:"4",x2:"20",y1:"18",y2:"18"}));
+        const X = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('path',{d:"M18 6 6 18"}), h('path',{d:"m6 6 12 12"}));
+        const ChevronRight = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('path',{d:"m9 18 6-6-6-6"}));
+        const Users = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('path',{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"}), h('circle',{cx:"9",cy:"7",r:"4"}), h('path',{d:"M22 21v-2a4 4 0 0 0-3-3.87"}), h('path',{d:"M16 3.13a4 4 0 0 1 0 7.75"}));
+        const TrendingUp = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('polyline',{points:"22 7 13.5 15.5 8.5 10.5 2 17"}), h('polyline',{points:"16 7 22 7 22 13"}));
+        const Award = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('circle',{cx:"12",cy:"8",r:"6"}), h('path',{d:"M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"}));
+        const MessageSquare = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('path',{d:"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"}));
+        const MessageCircle = ({className}) => h('svg', {xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className}, h('path',{d:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z"}));
+
+        function App() {
+            const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+            return h('div', {className: "min-h-screen bg-white"},
+                h('nav', {className: "fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-slate-100"},
+                    h('div', {className: "max-w-7xl mx-auto px-6 lg:px-8"},
+                        h('div', {className: "flex items-center justify-between h-20"},
+                            h('div', {className: "flex items-center"},
+                                h('span', {className: "text-2xl font-bold text-slate-900"}, 'AVENTUS')
+                            ),
+                            h('div', {className: "hidden md:flex items-center space-x-8"},
+                                h('a', {href: "#services", className: "text-slate-700 hover:text-slate-900 font-medium transition-colors"}, 'Services'),
+                                h('a', {href: "#about", className: "text-slate-700 hover:text-slate-900 font-medium transition-colors"}, 'About'),
+                                h('a', {href: "#process", className: "text-slate-700 hover:text-slate-900 font-medium transition-colors"}, 'Process'),
+                                h('a', {href: "#contact", className: "bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2.5 rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all transform hover:scale-105 shadow-[0_4px_0_0_rgba(217,119,6,0.4)] hover:shadow-[0_2px_0_0_rgba(217,119,6,0.4)] hover:translate-y-[2px] active:shadow-none active:translate-y-[4px]"}, 'Get Started')
+                            ),
+                            h('button', {className: "md:hidden", onClick: () => setMobileMenuOpen(!mobileMenuOpen)},
+                                mobileMenuOpen ? h(X, {className: "w-6 h-6"}) : h(Menu, {className: "w-6 h-6"})
+                            )
+                        )
+                    ),
+                    mobileMenuOpen && h('div', {className: "md:hidden bg-white border-t border-slate-100"},
+                        h('div', {className: "px-6 py-4 space-y-3"},
+                            h('a', {href: "#services", className: "block text-slate-700 hover:text-slate-900 font-medium py-2"}, 'Services'),
+                            h('a', {href: "#about", className: "block text-slate-700 hover:text-slate-900 font-medium py-2"}, 'About'),
+                            h('a', {href: "#process", className: "block text-slate-700 hover:text-slate-900 font-medium py-2"}, 'Process'),
+                            h('a', {href: "#contact", className: "block bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2.5 rounded-lg text-center mt-4 shadow-[0_4px_0_0_rgba(217,119,6,0.4)] active:shadow-none active:translate-y-[4px]"}, 'Get Started')
+                        )
+                    )
+                ),
+
+                h('section', {className: "pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white"},
+                    h('div', {className: "max-w-7xl mx-auto"},
+                        h('div', {className: "grid lg:grid-cols-2 gap-12 items-center"},
+                            h('div', {className: "space-y-8"},
+                                h('div', {className: "inline-block"},
+                                    h('span', {className: "bg-gradient-to-r from-amber-50 to-orange-50 text-amber-900 px-4 py-2 rounded-full text-sm font-medium border border-amber-200"}, 'Digital Media Marketing Excellence')
+                                ),
+                                h('h1', {className: "text-5xl lg:text-6xl font-bold text-slate-900 leading-tight"}, 'Elevate Your Digital Presence'),
+                                h('p', {className: "text-xl text-slate-600 leading-relaxed"}, 'We partner with creators and digital personalities to amplify their online impact through strategic media marketing and brand development.'),
+                                h('div', {className: "flex flex-col sm:flex-row gap-4"},
+                                    h('a', {href: "#contact", className: "bg-gradient-to-r from-amber-500 to-orange-600 text-white px-8 py-4 rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all transform flex items-center justify-center group shadow-[0_6px_0_0_rgba(217,119,6,0.5)] hover:shadow-[0_3px_0_0_rgba(217,119,6,0.5)] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px]"},
+                                        'Start Your Journey',
+                                        h(ChevronRight, {className: "ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"})
+                                    ),
+                                    h('a', {href: "#services", className: "border-2 border-slate-900 text-slate-900 px-8 py-4 rounded-lg hover:bg-slate-50 transition-all flex items-center justify-center shadow-[0_6px_0_0_rgba(15,23,42,0.3)] hover:shadow-[0_3px_0_0_rgba(15,23,42,0.3)] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px]"}, 'Our Services')
+                                )
+                            ),
+                            h('div', {className: "relative"},
+                                h('div', {className: "aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl shadow-2xl overflow-hidden"},
+                                    h('div', {className: "w-full h-full flex items-center justify-center"},
+                                        h('div', {className: "text-center space-y-4 p-8"},
+                                            h('div', {className: "grid grid-cols-2 gap-4"},
+                                                h('div', {className: "bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform border border-amber-100"},
+                                                    h(TrendingUp, {className: "w-8 h-8 text-amber-600 mb-2"}),
+                                                    h('p', {className: "text-2xl font-bold text-slate-900"}, '500%'),
+                                                    h('p', {className: "text-sm text-slate-600"}, 'Avg. Growth')
+                                                ),
+                                                h('div', {className: "bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform border border-orange-100"},
+                                                    h(Users, {className: "w-8 h-8 text-orange-600 mb-2"}),
+                                                    h('p', {className: "text-2xl font-bold text-slate-900"}, '100+'),
+                                                    h('p', {className: "text-sm text-slate-600"}, 'Creators')
+                                                ),
+                                                h('div', {className: "bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform border border-amber-100"},
+                                                    h(Award, {className: "w-8 h-8 text-amber-600 mb-2"}),
+                                                    h('p', {className: "text-2xl font-bold text-slate-900"}, '1M+'),
+                                                    h('p', {className: "text-sm text-slate-600"}, 'Reach')
+                                                ),
+                                                h('div', {className: "bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform border border-orange-100"},
+                                                    h(MessageSquare, {className: "w-8 h-8 text-orange-600 mb-2"}),
+                                                    h('p', {className: "text-2xl font-bold text-slate-900"}, '24/7'),
+                                                    h('p', {className: "text-sm text-slate-600"}, 'Support')
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+
+                h('section', {id: "services", className: "py-20 px-6 lg:px-8 bg-white"},
+                    h('div', {className: "max-w-7xl mx-auto"},
+                        h('div', {className: "text-center mb-16"},
+                            h('h2', {className: "text-4xl font-bold text-slate-900 mb-4"}, 'Our Services'),
+                            h('p', {className: "text-xl text-slate-600 max-w-2xl mx-auto"}, 'Comprehensive digital media solutions tailored for modern creators and influencers')
+                        ),
+                        h('div', {className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8"},
+                            [{title: 'Brand Strategy', description: 'Develop a compelling brand identity that resonates with your audience and sets you apart in the digital landscape.', icon: '🎯'},
+                            {title: 'Content Creation', description: 'Professional content production that captures attention and drives engagement across all platforms.', icon: '📸'},
+                            {title: 'Social Media Management', description: 'Strategic planning and execution across all major social platforms to maximise your reach and impact.', icon: '📱'},
+                            {title: 'Analytics & Insights', description: 'Data-driven strategies backed by comprehensive analytics to optimise your digital performance.', icon: '📊'},
+                            {title: 'Influencer Partnerships', description: 'Connect with the right brands and collaborators to expand your influence and revenue streams.', icon: '🤝'},
+                            {title: 'Monetisation Strategy', description: 'Maximise your earning potential through diversified revenue streams and strategic partnerships.', icon: '💰'}
+                            ].map((service, index) =>
+                                h('div', {key: index, className: "bg-gradient-to-br from-slate-50 to-amber-50/30 p-8 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group cursor-pointer border border-slate-200"},
+                                    h('div', {className: "text-4xl mb-4"}, service.icon),
+                                    h('h3', {className: "text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-700 transition-colors"}, service.title),
+                                    h('p', {className: "text-slate-600 leading-relaxed"}, service.description)
+                                )
+                            )
+                        )
+                    )
+                ),
+
+                h('section', {id: "about", className: "py-20 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"},
+                    h('div', {className: "max-w-7xl mx-auto"},
+                        h('div', {className: "grid lg:grid-cols-2 gap-12 items-center"},
+                            h('div', null,
+                                h('h2', {className: "text-4xl font-bold mb-6"}, 'Why Choose Aventus?'),
+                                h('p', {className: "text-lg text-slate-300 mb-8 leading-relaxed"}, 'At Aventus Digital Media, we understand the unique challenges facing today\'s digital creators. Our team combines creative excellence with data-driven strategies to deliver measurable results.'),
+                                h('div', {className: "space-y-6"},
+                                    [{title: 'Expert Team', description: 'Industry veterans with proven track records in digital media and marketing'},
+                                    {title: 'Tailored Approach', description: 'Custom strategies designed specifically for your unique brand and goals'},
+                                    {title: 'Proven Results', description: 'Consistent delivery of exceptional outcomes across all client partnerships'}
+                                    ].map((item, index) =>
+                                        h('div', {key: index, className: "flex gap-4"},
+                                            h('div', {className: "flex-shrink-0"},
+                                                h('div', {className: "w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center"},
+                                                    h(ChevronRight, {className: "w-6 h-6"})
+                                                )
+                                            ),
+                                            h('div', null,
+                                                h('h3', {className: "text-xl font-bold mb-2"}, item.title),
+                                                h('p', {className: "text-slate-300"}, item.description)
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            h('div', {className: "bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10"},
+                                h('div', {className: "space-y-8"},
+                                    h('div', null,
+                                        h('p', {className: "text-slate-400 mb-2"}, 'Client Satisfaction'),
+                                        h('div', {className: "flex items-end gap-2"},
+                                            h('span', {className: "text-5xl font-bold"}, '98%'),
+                                            h('span', {className: "text-amber-400 mb-2"}, '↑ 5%')
+                                        )
+                                    ),
+                                    h('div', null,
+                                        h('p', {className: "text-slate-400 mb-2"}, 'Average ROI Increase'),
+                                        h('div', {className: "flex items-end gap-2"},
+                                            h('span', {className: "text-5xl font-bold"}, '425%'),
+                                            h('span', {className: "text-orange-400 mb-2"}, '↑ 12%')
+                                        )
+                                    ),
+                                    h('div', null,
+                                        h('p', {className: "text-slate-400 mb-2"}, 'Active Campaigns'),
+                                        h('div', {className: "flex items-end gap-2"},
+                                            h('span', {className: "text-5xl font-bold"}, '150+'),
+                                            h('span', {className: "text-amber-400 mb-2"}, '↑ 25')
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+
+                h('section', {id: "process", className: "py-20 px-6 lg:px-8 bg-slate-50"},
+                    h('div', {className: "max-w-7xl mx-auto"},
+                        h('div', {className: "text-center mb-16"},
+                            h('h2', {className: "text-4xl font-bold text-slate-900 mb-4"}, 'Our Process'),
+                            h('p', {className: "text-xl text-slate-600 max-w-2xl mx-auto"}, 'A streamlined approach to elevating your digital presence')
+                        ),
+                        h('div', {className: "grid md:grid-cols-4 gap-8"},
+                            [{step: '01', title: 'Discovery', description: 'We analyse your current presence and identify opportunities for growth'},
+                            {step: '02', title: 'Strategy', description: 'Develop a comprehensive roadmap tailored to your unique goals'},
+                            {step: '03', title: 'Execution', description: 'Implement campaigns with precision and creative excellence'},
+                            {step: '04', title: 'Optimisation', description: 'Continuously refine and improve based on performance data'}
+                            ].map((item, index) =>
+                                h('div', {key: index, className: "relative"},
+                                    h('div', {className: "bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"},
+                                        h('div', {className: "text-5xl font-bold text-slate-200 mb-4"}, item.step),
+                                        h('h3', {className: "text-xl font-bold text-slate-900 mb-3"}, item.title),
+                                        h('p', {className: "text-slate-600"}, item.description)
+                                    ),
+                                    index < 3 && h('div', {className: "hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2"},
+                                        h(ChevronRight, {className: "w-8 h-8 text-slate-300"})
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+
+                h('section', {id: "contact", className: "py-20 px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"},
+                    h('div', {className: "max-w-4xl mx-auto text-center"},
+                        h('h2', {className: "text-4xl lg:text-5xl font-bold mb-6"}, 'Ready to Transform Your Digital Presence?'),
+                        h('p', {className: "text-xl text-slate-300 mb-10 leading-relaxed"}, 'Join hundreds of successful creators who have elevated their brands with Aventus Digital Media.'),
+                        h('div', {className: "flex flex-col sm:flex-row gap-4 justify-center"},
+                            h('a', {href: "mailto:info@aventusdigital.co.uk", className: "bg-gradient-to-r from-amber-500 to-orange-600 text-white px-8 py-4 rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all transform font-medium shadow-[0_6px_0_0_rgba(217,119,6,0.3)] hover:shadow-[0_3px_0_0_rgba(217,119,6,0.3)] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px]"}, 'Get in Touch'),
+                            h('a', {href: "tel:+441213841333", className: "border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition-all font-medium shadow-[0_6px_0_0_rgba(255,255,255,0.2)] hover:shadow-[0_3px_0_0_rgba(255,255,255,0.2)] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px]"}, 'Call Us Today')
+                        )
+                    )
+                ),
+
+                h('footer', {className: "bg-slate-950 text-slate-400 py-12 px-6 lg:px-8"},
+                    h('div', {className: "max-w-7xl mx-auto"},
+                        h('div', {className: "grid md:grid-cols-4 gap-8 mb-8"},
+                            h('div', {className: "md:col-span-2"},
+                                h('div', {className: "mb-4"},
+                                    h('span', {className: "text-2xl font-bold text-white"}, 'AVENTUS')
+                                ),
+                                h('p', {className: "text-slate-400 mb-4 max-w-sm"}, 'Empowering creators and digital personalities to reach their full potential through strategic media marketing.')
+                            ),
+                            h('div', null,
+                                h('h3', {className: "text-white font-bold mb-4"}, 'Quick Links'),
+                                h('ul', {className: "space-y-2"},
+                                    h('li', null, h('a', {href: "#services", className: "hover:text-white transition-colors"}, 'Services')),
+                                    h('li', null, h('a', {href: "#about", className: "hover:text-white transition-colors"}, 'About')),
+                                    h('li', null, h('a', {href: "#process", className: "hover:text-white transition-colors"}, 'Process')),
+                                    h('li', null, h('a', {href: "#contact", className: "hover:text-white transition-colors"}, 'Contact'))
+                                )
+                            ),
+                            h('div', null,
+                                h('h3', {className: "text-white font-bold mb-4"}, 'Contact'),
+                                h('ul', {className: "space-y-2"},
+                                    h('li', null, 'info@aventusdigital.co.uk'),
+                                    h('li', null, '+44 121 384 1333'),
+                                    h('li', null, 'England, United Kingdom')
+                                )
+                            )
+                        ),
+                        h('div', {className: "border-t border-slate-800 pt-8"},
+                            h('div', {className: "flex flex-col md:flex-row justify-between items-center gap-4"},
+                                h('p', null, '© 2025 Aventus Digital Media. All rights reserved.'),
+                                h('div', {className: "flex gap-6 text-sm"},
+                                    h('a', {href: "/legal/terms-of-use.html", className: "hover:text-white transition-colors"}, 'Terms of Use'),
+                                    h('a', {href: "/legal/privacy-policy.html", className: "hover:text-white transition-colors"}, 'Privacy Policy'),
+                                    h('a', {href: "/legal/disclaimer.html", className: "hover:text-white transition-colors"}, 'Disclaimer'),
+                                    h('a', {href: "/legal/company-info.html", className: "hover:text-white transition-colors"}, 'Company Info')
+                                )
+                            )
+                        )
+                    )
+                ),
+
+                h('a', {
+                    href: "https://wa.me/441213841333",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#20BD5A] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 z-50 group animate-bounce-subtle"
+                },
+                    h(MessageCircle, {className: "w-6 h-6"}),
+                    h('span', {className: "absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-900 text-white px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"}, 'Chat on WhatsApp')
+                )
+            );
+        }
+
+        const root = createRoot(document.getElementById('root'));
+        root.render(h(App));
+    </script>
+</body>
+</html></pre>
+                <button class="copy-btn" onclick="copyToClipboard('file1', this)">📋 Copy to Clipboard</button>
+            </div>
+
+            <!-- Remaining files continue in the next part... -->
+            <p style="margin-top: 20px;"><strong>Now copy the 4 legal files below...</strong></p>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">4</span> Upload to IONOS</h2>
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li>Save <code>index.html</code> to your computer</li>
+                <li>In IONOS File Manager, upload <code>index.html</code> to the <strong>root folder</strong></li>
+                <li>Create a new folder called <code>legal</code></li>
+                <li>Upload the 4 legal files into the <code>legal</code> folder</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">5</span> Test Your Website</h2>
+            <p>Visit your domain name (e.g., <strong>www.yourdomain.com</strong>) and your website will be live!</p>
+        </div>
+
+        <div class="important">
+            <strong>🎉 That's it!</strong> Your Aventus website is now live. If you need help, call <strong>+44 121 384 1333</strong> or check your IONOS support docs.
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(elementId, button) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent;
+
+            navigator.clipboard.writeText(text).then(() => {
+                button.textContent = '✅ Copied!';
+                button.classList.add('success');
+
+                setTimeout(() => {
+                    button.textContent = '📋 Copy to Clipboard';
+                    button.classList.remove('success');
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy. Please select and copy manually.');
+            });
+        }
+    </script>
+</body>
+</html>
