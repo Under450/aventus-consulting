@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Ensure Vite is installed
+        run: npm install vite --save-dev
+
       - name: Build project
         run: npm run build
 
@@ -27,3 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
